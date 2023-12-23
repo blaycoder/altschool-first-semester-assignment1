@@ -26,38 +26,38 @@
          </div>
       </div>
    </nav>
-   <div class="login_box">
+   <div class="register_box">
       <div class="container">
-         <form action="" class="register_form" role="form">
+         <form action="" class="register_form">
             <h2>Application Form</h2>
-            <h5>Fill in your details</h5>
+            <h3>Fill in your details</h3>
             <label for="fname"> First Name</label> <span
                style="color: red !important; display: inline; float: none;">*</span><br>
             <input type="text" required placeholder="Enter first name" id="fname"><br>
 
             <label for="lname">Last name</label><span
-               style="color: red !important; display: inline; float: none;">*</span><br>
+               style="color: red; display: inline; float: none;">*</span><br>
             <input type="text" required placeholder="Enter last name" id="lname"><br>
 
             <label for="gender"> Gender</label><span
-               style="color: red !important; display: inline; float: none;">*</span> <br>
-            <select name="gender" required>
+               style="color: red; display: inline; float: none;">*</span> <br>
+            <select name="gender" required aria-label="Gender">
                <option value="" disabled selected>Select gender</option>
                <option value="male">male</option>
                <option value="female">female</option>
             </select> <br>
 
             <label for="date">Date of Birth</label><span
-               style="color: red !important; display: inline; float: none;">*</span><br>
+               style="color: red; display: inline; float: none;">*</span><br>
             <input type="date" name="date" id="date" required> <br>
 
             <label for="email">Email Address</label><span
-               style="color: red !important; display: inline; float: none;">*</span><br>
+               style="color: red; display: inline; float: none;">*</span><br>
             <input type="email" name="email" id="email" required placeholder="Enter email address"> <br>
 
-            <label for="gender"> Education level </label><span
-               style="color: red !important; display: inline; float: none;">*</span> <br>
-            <select name="gender" required>
+            <label for="education-level"> Education Level </label><span
+               style="color: red; display: inline; float: none;">*</span> <br>
+            <select name="education-level" required aria-label="Education Level">
                <option value="" disabled selected>Select level of education</option>
                <option value="Bsc">Bsc</option>
                <option value="Msc">Msc</option>
@@ -71,7 +71,7 @@
 
             <label for="country">Country</label><span
                style="color: red !important; display: inline; float: none;">*</span><br>
-            <select id="country" name="country">
+            <select id="country" name="country" aria-label="Country">
                <option value="" disabled selected>Select your country</option>
                <option value="Afghanistan">Afghanistan</option>
                <option value="Åland Islands">Åland Islands</option>
@@ -327,7 +327,7 @@
 
             <label for="employment-status">Employment Status</label><span
                style="color: red; display: inline; float: none;">*</span><br>
-            <select name="employment-status" required>
+            <select name="employment-status" required aria-label="Employment Status">
                <option value="" disabled selected>Select employment status</option>
                <option value="employed">employed</option>
                <option value="unemployed">unemployed</option>
@@ -340,7 +340,7 @@
 
             <label for="school">Choose School</label><span
                style="color: red; display: inline; float: none;">*</span><br>
-            <select name="school" required>
+            <select name="school" required aria-label="Choose School">
                <option value="" disabled selected>Select school</option>
                <option value="School of Creative Economy">School of Creative Economy</option>
                <option value="School of Business">School of Business</option>
@@ -348,7 +348,7 @@
 
             <label for="course">Choose Course of Study</label><span
                style="color: red; display: inline; float: none;">*</span><br>
-            <select name="course" required>
+            <select name="course" required aria-label="Choose Course of Study">
                <option value="" disabled selected>Select course</option>
                <option value=""></option>
                <option value=""></option>
@@ -356,7 +356,7 @@
 
             <label for="channel">How did you hear about us?</label><span
                style="color: red; display: inline; float: none;">*</span><br>
-            <select name="channel" required>
+            <select name="channel" required aria-label="How did you hear about us?">
                <option value="" disabled selected>Select channel</option>
                <option value="Twitter">Twitter</option>
                <option value="Facebook">Facebook</option>
