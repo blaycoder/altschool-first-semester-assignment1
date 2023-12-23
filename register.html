@@ -5,27 +5,24 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="script.js" type="text/script"></script>
-   <link rel="stylesheet" href="style.css" type="text/css">
-   <title>OA-Just Me-Register</title>
+   <title>HTML Register Form</title>
 </head>
 
 <body>
-   <nav class="navbar">
-      <div class="container">
-         <div class="logo"><a href="index.html"> OA </a> </div>
-         <div class="nav">
-            <ul>
-               <li>
-                  <a href="index.html">About Me</a>
-               </li>
-               <li>
-                  <a href="register.html">Register</a>
-               </li>
-            </ul>
-         </div>
+<header>
+   <nav>
+      <div role="navigation" aria-label="Navbar links">
+         <ul>
+            <li>
+               <a href="index.html" role="link">About Me</a>
+            </li>
+            <li>
+               <a href="register.html" role="link">Register</a>
+            </li>
+         </ul>
       </div>
    </nav>
+</header>
    <div class="register_box">
       <div class="container">
          <form action="" class="register_form">
@@ -371,6 +368,13 @@
 
             <label for="scholarship">Scholarship/Discount Code (optional)</label><br>
             <input type="text" name="scholarship" id="scholarship" placeholder="Scholarship or student ID">
+
+            <div class="terms-conditions">
+               <p>By clicking continue, I agree to <span><a href="#" role="link">Terms of Use</a></span>  and acknowledge that I
+               have read the <span><a href="#" role="link">Privacy Policy.</a></span></p>
+            </div>
+            <button>Proceed</button>
+            <p><strong>Already have an account? <span><a href="#" role="link">Sign In</a></span> </strong></p>
          </form>
       </div>
    </div>
